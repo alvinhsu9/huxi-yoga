@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Quicksand:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles/jquery.gridder.min.css">
+    <link rel="stylesheet" href="styles/flickity.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Huxi Yoga</title>
+</head>
+<body>
+    <header class="header">
+        <div class="img-wrap">
+            <a class="img-link" href="index.html" title="Home Page">
+                <img src="images/huxi-logo.svg" alt="Company Logo">
+            </a>
+        </div>
+        <button class="gn-trigger">
+            <div class="burger"></div> 
+        </button>
+        <nav class="gn">
+            <ul class="gn-items">
+                <li>
+                    <a href="#about" title="About Section">About</a>
+                </li>
+                <li>
+                    <a href="#team" title="Team Section">Team</a>
+                </li>
+                <li>
+                    <a href="#events" title="Events Section">Events</a>
+                </li>
+                <li>
+                    <a href="#methods" title="Methods Section">Methods</a>
+                </li>
+                <li>
+                    <a href="#gallery" title="Gallery Section">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="bnr">
+            <div class="bnr-img"></div>
+            <div class="bnr-content">
+                <h1 class="company-name">Hūxī<br>Yoga</h1>
+                <p class="tagline">Calming our minds<br>one breath at a time.</p>
+                <div class="bnr-btns">
+                    <a href="signup.html" title="Signup Page">
+                        <button class="sign-up btn">
+                            Join us today!
+                        </button>
+                    </a>
+                    <a href="schedule.html" title="Schedule Page">
+                        <button class="schedule btn">
+                            Check our schedule!
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="wrap">
+            <section id="about" class="about">
+                <div class="about-bnr bg-center overlay">
+                    <div class="video-container">
+                        <div class="overlay"></div>
+                            <video class="bnr-video" autoplay muted loop>
+                                <source src="videos/bnr-vid.mp4" type="video/mp4">
+                            </video>
+                        </video>
+                    </div>
+                    <div class="about-intro">
+                        <h2>About Us</h2>
+                        <p class="definition">Hūxī, in Mandarin means:<br><strong>To Breathe</strong></p>
+                    </div>
+                </div>
+                <div class="about-accordion">
+                    <button class="accordion">How Hūxī Yoga was created</button>
+                    <div class="about-panel">
+                        <p class="about-p">It's been a tough 2 years for not just you, but for the world. Here at Hūxī we have one purpose, helping everyone find their inner peace and to silence the outside noise.</p>
+                        <p class="about-p">After struggling with anxiety for many years, CEO Ryan Topp looked into different methods to help him cope. With the stress of the COVID pandemic and trying to maintain balance with his work/social life, he could feel his mental health deteriorating. </p>
+                        <p class="about-p">After many trial runs at different coping methods, he stumbled upon yoga. Not only did it help calm him mentally, but it helped with his physical health as well. After years of stretching, posing, and breathing techniques, he finally felt that he had found his inner peace.</p>
+                        <p class="about-p">Hoping to share the knowledge and wisdom he has picked up along the way, he created Hūxī. A yoga meditation studio with the goal of helping all achieve mental stability. </p>
+                    </div>
+                </div>
+            </section>
+            <section id="team" class="team">
+                <!-- use gridder -->
+                <h2>Meet the team</h2>
+                <ul class="gridder">
+                    <div class="individual">
+                        <li class="gridder-list" data-griddercontent="#content1">
+                            <img class="team-member ceo" src="images/team/ceo.jpeg"/>
+                        </li>
+                    </div>
+                    <div class="two-col-team">
+                        <div class="individual">
+                            <li class="gridder-list" data-griddercontent="#content2">
+                                <img class="team-member" src="images/team/head-coach.jpeg"/>
+                            </li>
+                        </div>
+                        <div class="individual">
+                            <li class="gridder-list" data-griddercontent="#content3">
+                                <img class="team-member" src="images/team/coach1.jpeg"/>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="two-col-team">
+                        <div class="individual">
+                            <li class="gridder-list" data-griddercontent="#content4">
+                                <img class="team-member" src="images/team/coach2.jpeg"/>
+                            </li>
+                        </div>
+                        <div class="individual">
+                            <li class="gridder-list" data-griddercontent="#content5">
+                                <img class="team-member" src="images/team/social-media.jpeg"/>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="two-col-team">
+                        <div class="individual">
+                            <li class="gridder-list" data-griddercontent="#content6">
+                                <img class="team-member" src="images/team/event-coord.jpeg"/>
+                            </li>
+                        </div>
+                        <div class="individual">
+                            <li class="gridder-list" data-griddercontent="#content7">
+                                <img class="team-member" src="images/team/photographer.jpeg"/>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="three-col-team">
+                        <div class="individual">
+                            <li class="gridder-list" data-griddercontent="#content2">
+                                <img class="team-member" src="images/team/head-coach.jpeg"/>
+                            </li>
+                        </div>
+                        <div class="individual">
+                            <li class="gridder-list" data-griddercontent="#content3">
+                                <img class="team-member" src="images/team/coach1.jpeg"/>
+                            </li>
+                        </div>
+                        <div class="individual">
+                            <li class="gridder-list" data-griddercontent="#content4">
+                                <img class="team-member" src="images/team/coach2.jpeg"/>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="three-col-team">
+                        <div class="individual">
+                            <li class="gridder-list" data-griddercontent="#content5">
+                                <img class="team-member" src="images/team/social-media.jpeg"/>
+                            </li>
+                        </div>
+                        <div class="individual">
+                            <li class="gridder-list" data-griddercontent="#content6">
+                                <img class="team-member" src="images/team/event-coord.jpeg"/>
+                            </li>
+                        </div>
+                        <div class="individual">
+                            <li class="gridder-list" data-griddercontent="#content7">
+                                <img class="team-member" src="images/team/photographer.jpeg"/>
+                            </li>
+                        </div>
+                    </div>
+               </ul>
+               <div id="content1" class="gridder-content ceo"> <strong>Ryan Topp:<br><span class="ceo">CEO</span></strong></div>
+               <div id="content2" class="gridder-content"> <strong>Sara Lirn:</strong><br>Head Coach </div>
+               <div id="content3" class="gridder-content"> <strong>Kyle Resy:</strong><br>Coach </div>
+               <div id="content4" class="gridder-content"> <strong>Taryn Yew:</strong><br>Coach </div>
+               <div id="content5" class="gridder-content"><strong>Olivia Winst:</strong><br>Social Media Manager</div>
+               <div id="content6" class="gridder-content"><strong>Chris Tanr:</strong><br>Event Coordinator</div>
+               <div id="content7" class="gridder-content"><strong>Jeremy Baton:</strong><br>Photographer</div>
+            </section>
+            <section id="events" class="events">
+                <h2>Our past events</h2>
+                <h3 class="event-heading">Yoga in the park</h3>
+                <section class="image-slider" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "prevNextButtons": false }'>
+                    <div class="cell bg-centre cell-1"></div>
+                    <div class="cell bg-centre cell-2"></div>
+                    <div class="cell bg-centre cell-3"></div>
+                 </section>
+                 <h3 class="event-heading"3>Bring your pet yoga</h3>
+                 <section class="image-slider" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "prevNextButtons": false }'>
+                    <div class="cell bg-centre cell-4"></div>
+                    <div class="cell bg-centre cell-5"></div>
+                    <div class="cell bg-centre cell-6"></div>
+                 </section>
+                 <h3 class="event-heading">Goat yoga</h3>
+                 <section class="image-slider" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "prevNextButtons": false }'>
+                    <div class="cell bg-centre cell-7"></div>
+                    <div class="cell bg-centre cell-8"></div>
+                    <div class="cell bg-centre cell-9"></div>
+                 </section>
+                 <h3 class="event-heading">Lakeside yoga</h3>
+                 <section class="image-slider" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "prevNextButtons": false }'>
+                    <div class="cell bg-centre cell-10"></div>
+                    <div class="cell bg-centre cell-11"></div>
+                    <div class="cell bg-centre cell-12"></div>
+                 </section>
+                 <h3 class="event-heading"3>Night yoga</h3>
+                 <section class="image-slider" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "prevNextButtons": false }'>
+                    <div class="cell bg-centre cell-13"></div>
+                    <div class="cell bg-centre cell-14"></div>
+                    <div class="cell bg-centre cell-15"></div>
+                 </section>
+                 <h3 class="event-heading">Yoga at home</h3>
+                 <section class="image-slider" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "prevNextButtons": false }'>
+                    <div class="cell bg-centre cell-16"></div>
+                    <div class="cell bg-centre cell-17"></div>
+                    <div class="cell bg-centre cell-18"></div>
+                 </section>
+            </section>
+            <section id="methods" class="methods">
+                <h2>Other methods</h2>
+                <button class="accordion">Make Social Connections</button>
+                <div class="method-panel">
+                    <p class="panel-p">Social connection can lower anxiety and depression, help us regulate our emotions, lead to higher self-esteem and empathy, and actually improve our immune systems. By neglecting our need to connect, we put our health at risk. </p>
+                </div>
+                <button class="accordion">Stay Active</button>
+                <div class="method-panel">
+                    <p class="panel-p">Exercise improves mental health by reducing anxiety, depression, and negative mood and by improving self-esteem and cognitive function. Exercise has also been found to alleviate symptoms such as low self-esteem and social withdrawal.</p>
+                </div>
+                <button class="accordion">Talk To Someone</button>
+                <div class="method-panel">
+                    <p class="panel-p">Studies have shown that simply talking about our problems and sharing our negative emotions with someone we trust can be profoundly healing—reducing stress, strengthening our immune system, and reducing physical and emotional distress.</p>
+                </div>
+                <button class="accordion">Meditate</button>
+                <div class="method-panel">
+                    <p class="panel-p">The mental health benefits of meditation include better focus and concentration, improved self-awareness and self-esteem, lower levels of stress and anxiety, and fostering kindness. Meditation also has benefits for your physical health, as it can improve your tolerance for pain and help fight substance addiction.</p>
+                </div>
+                <button class="accordion">Eat Healthy</button>
+                <div class="method-panel">
+                    <p class="panel-p">A healthy, well-balanced diet can help us think clearly and feel more alert. It can also improve concentration and attention span. Conversely, an inadequate diet can lead to fatigue, impaired decision-making, and can slow down reaction time.</p>
+                </div>
+                <button class="accordion">Sleep</button>
+                <div class="method-panel">
+                    <p class="panel-p">Sufficient sleep, especially REM sleep, facilitates the brain's processing of emotional information. During sleep, the brain works to evaluate and remember thoughts and memories, and it appears that a lack of sleep is especially harmful to the consolidation of positive emotional content.</p>
+                </div>
+                <button class="accordion">Find A New Hobby</button>
+                <div class="method-panel">
+                    <p class="panel-p">Spending time on an activity that you enjoy can improve your mental health and wellbeing. Research shows that people with hobbies are less likely to suffer from stress, low mood, and depression. Activities that get you out and about can make you feel happier and more relaxed.</p>
+                </div> 
+                <h3 class="other-ways"><i>Other ways to seek help:</i></h3>
+                <ul class="help-links">
+                    <li>
+                        <a href="https://www.heretohelp.bc.ca/" title="Here To Help" target="_blank">Here To Help BC</a>
+                    </li>
+                    <li>
+                        <a href="https://www.bcit.ca/counselling/mental-health-at-home/" title="BCIT" target="_blank">BCIT Resources</a>
+                    </li>
+                    <li>
+                        <a href="https://wellnesstogether.ca/en-CA" title="Wellness Together" target="_blank">Wellness Together</a>
+                    </li>
+                    <li>
+                        <a href="https://www.healthlinkbc.ca/mental-health-substance-use/resources" title="Health Link BC" target="_blank">Health Link BC</a>
+                    </li>
+                    <li>
+                        <a href="https://www2.gov.bc.ca/gov/content/health/managing-your-health/mental-health-substance-use/virtual-mental-health-supports" title="Government BC" target="_blank">Virtual Mental Health Supports</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="gallery" class="gallery">
+                <h2>Gallery</h2>
+                <div class="container-fluid">
+					<div class="row">
+                        <div class="grid">
+                            <div class="grid-sizer"></div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery1.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery2.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery3.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery4.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery5.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery6.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery7.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery8.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery9.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery10.jpg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery11.jpg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery12.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery13.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery14.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery15.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery16.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery17.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery18.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery19.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery20.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery21.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery22.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery23.jpeg" title="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="gallery-img" src="images/gallery/gallery24.jpeg" title="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p class="copyright">&copy; Hūxī 2021</p>
+        </div>
+        <div class="contact">
+            <a href="tel:604-604-6046" title="Phone number">
+                <h4>604-604-6046</h4>
+            </a>
+            <a href="mailto:huxiyoga@gmail.com" title="Email">
+                <h4>huxiyoga@gmail.com</h4>
+            </a>
+        </div>
+        <div class="socials">
+            <a href="#" title="Instagram Link">
+                <img src="images/instagram.png"></a>
+            <a href="#" title="Facebook Link">
+                <img src="images/facebook.png">
+            </a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="scripts/jquery.gridder.min.js"></script>
+    <script src="scripts/scroll-lock.js"></script>
+    <script src="scripts/flickity.js"></script>
+    <script src="scripts/main.js"> </script>
+</body>
+</html>

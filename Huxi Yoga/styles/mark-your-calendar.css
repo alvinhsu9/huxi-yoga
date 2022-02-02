@@ -1,0 +1,261 @@
+#picker {
+    margin-top: 20px;
+}
+
+#calendar-container {
+    width: inherit;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#month-container {
+    margin-bottom: 15px;
+    width: inherit;
+}
+
+#current-month {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight:400;
+    text-align: center;
+    text-transform: capitalize;
+    vertical-align: top;
+    width: 68%;
+}
+
+#previous-container {
+    display: inline-block;
+    width: 15%;
+}
+
+#next-container {
+    display: inline-block;
+    width: 15%;
+}
+
+#previous-week {
+    border: 2px solid #e0e0e0;
+    border-radius: 80px;
+    color: #e0e0e0;
+    cursor: pointer;
+    float: left;
+    margin-left: 40px;
+    font-size: 1.6em;
+    font-weight: lighter;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+}
+
+#next-week{
+    border: 2px solid #e0e0e0;
+    border-radius: 80px;
+    color: #e0e0e0;
+    cursor: pointer;
+    float: right;
+    margin-right: 40px;
+    font-size: 1.6em;
+    font-weight: lighter;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+}
+
+#previous-week:hover, #next-week:hover {
+    border: 2px solid #edaa87;
+    color: #edaa87;
+}
+
+#week-container {
+    border: 1px solid #e0e0e0;
+}
+
+#week-container {
+    background-color: #fafafa;
+}
+
+.date-header {
+    border-right: 1px solid #e0e0e0;
+    display: inline-block;
+    min-height: 50px;
+    padding: 15px 0px 15px 15px;
+    vertical-align: top;
+    width: 13.77%;
+}
+
+.date-header:first-of-type {
+    padding-left: 15px;
+}
+
+.date-header:last-of-type {
+    border-right: none;
+    width: 13%;
+}
+
+#available-times {
+    border-top: 1px solid #e0e0e0;
+    min-height: 150px;
+}
+
+.available-on-day {
+    /*border-right: 1px solid #e0e0e0;*/
+    display: inline-block;
+    height: 100%;
+    padding: 15px 15px 15px 15px;
+    vertical-align: top;
+    width: 13.77%;
+}
+
+.available-on-day:first-of-type {
+    padding-left: 15px;
+}
+
+.available-on-day:last-of-type {
+    border-right: none;
+    width: 13%;
+}
+
+.date-number {
+    font-size: 1.8em;
+    font-weight: lighter;
+    color: black;
+}
+
+.date-day {
+    color: black;
+}
+
+.available-time {
+    background-color: #7ea9c9;
+    border-radius: 20px;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+.available-time.selected, .available-time:hover {
+    background-color: #edaa87;
+}
+
+.myc-date-display {
+    font-weight: lighter;
+}
+
+
+@media only screen and (min-width: 320px) {
+    #previous-container {
+        margin-left: 20px;
+    }
+    #next-container {
+        margin-right: 20px;
+    }
+    #previous-week {
+        height: 35px;
+        width: 35px;
+        font-size: 1.5em;
+        margin: 0;
+    }
+    #next-week{
+        height: 35px;
+        width: 35px;
+        font-size: 1.5em;
+        margin: 0;
+    }
+    #current-month {
+        width: 54%;
+        font-size: 25px;
+    }
+    .date-header {
+        width: 12.7%;
+        font-size: 10px;
+        padding: 5px;
+    }
+    .date-header:first-of-type {
+        padding-left: 10px;
+    }
+    .date-header:first-of-type {
+        padding-left: 5px;
+    }
+    .available-on-day:first-of-type {
+        padding: 5px;
+    }
+    .available-on-day {
+        width: 12.7%;
+        font-size: 10px;
+        padding: 5px;
+    }
+    .available-time {
+        border-radius: 15px;
+    }
+    .available-time:first-of-type {
+        margin-top: 10px;
+    }
+    .book {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    #current-month {
+        width: 59%;
+    }
+    .date-header {
+        width: 13%;
+        font-size: 12px;
+    }
+    .available-on-day {
+        width: 13%;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    #previous-container {
+        width: 7%;
+        margin-left: 20px;
+    }
+    #next-container {
+        width: 7%;
+        margin-right: 20px;
+    }
+    #current-month {
+        width: 77.5%;
+        font-size: 25px;
+    }
+    .date-header {
+        width: 13.5%;
+        font-size: 15px;
+        padding: 10px;
+    }
+    .date-header:first-of-type {
+        padding-left: 15px;
+    }
+    .available-on-day {
+        width: 13.5%;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .date-header {
+        width: 13.5%;
+        font-size: 15px;
+        padding: 10px;
+    }
+    .available-on-day {
+        width: 13.5%;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #current-month {
+        font-size: 35px;
+    }
+    .book {
+        font-size: 20px;
+    }
+}

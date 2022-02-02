@@ -1,0 +1,126 @@
+.lead { font-size: 1.5rem; font-weight: 300; }
+    .row {
+      display: flex;
+      margin-bottom: 20px;
+      flex-direction: column;
+    }
+
+    .row>.item-name {
+      width: 200px;
+    }
+
+    .row>.item-input>input {
+      width: 100%;
+    }
+
+    .row>.item-confirm {
+      margin: 0;
+    }
+
+    .error-message {
+      margin: 4px 0 0 0;
+      color: #ee0000;
+    }
+
+    button,
+    label,
+    input[type='checkbox'],
+    input[type='radio'] {
+      cursor: pointer;
+    }
+
+    button {
+      padding: 6px 30px;
+    }
+
+    #prev-button,
+    #send-button,
+    .status-completed {
+      display: none;
+    }
+    .btn { padding: 1rem; border: 0; border-radius: 3px; background-color: #4F46E5; color: #fff; cursor: pointer; }
+
+    .signup-container { 
+      margin: 175px 20px 50px; max-width: 960px; 
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      border: solid 5px white;
+    }
+
+    .sign-head {
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label.option {
+      padding: 0 15px;
+    }
+
+    .sign-btn {
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  #sign-button {
+    background-color: #edaa87;
+    padding: 20px;
+  }
+
+  #sign-button:hover {
+    background-color: white;
+    color: #edaa87;
+  }
+
+  .item-input.status-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #entry-form.status-input.status-confirm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: 580px) {
+    .row>.item-input>input {
+      width: 400px;
+    }
+}
+
+  @media (min-width: 768px) {
+    .row {
+      flex-direction: row;
+    }
+    .row>.item-input>input {
+      width: 400px;
+    }
+    .signup-container { 
+      margin: 175px 40px 50px; max-width: 960px; 
+    }
+}
+
+@media (min-width: 1100px) {
+  .signup-container { 
+    margin: 175px auto 50px; max-width: 960px; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .row {
+    flex-direction: row;
+  }
+  .row>.item-input>input {
+    width: 500px;
+  }
+  .signup-container { 
+    padding: 50px;
+  }
+  .item-input.status-input.button-input {
+    display: flex;
+    flex-direction: row;
+  }
+}
